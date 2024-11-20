@@ -8,6 +8,7 @@ namespace TeemIp\TeemIp\Extension\MACAddressLookup\Hook;
 
 use ApplicationContext;
 use AttributeMacAddress;
+use Combodo\iTop\Service\Router\Router;
 use Dict;
 use iPopupMenuExtension;
 use MetaModel;
@@ -50,14 +51,14 @@ class MacLookupOtherActions implements iPopupMenuExtension {
 						case 'details':
 							$aResult[] = new SeparatorPopupMenuItem();
 							$sMenu = 'UI:MACLookup:Action:CI:Lookup';
-                            $aResult[] = new URLPopupMenuItem($sMenu, Dict::S($sMenu), utils::GetAbsoluteUrlAppRoot()."pages/UI.php?route=teemip-macaddress-lookup.mac_address_lookup_from_ci&class=$sClass&id=$id&$sContext");
+                            $aResult[] = new URLPopupMenuItem($sMenu, Dict::S($sMenu), Router::GetInstance()->GenerateUrl('teemip-macaddress-lookup.mac_address_lookup_from_ci', array('class' => $sClass, 'id'=> $id)));
 							break;
 
 						case 'macaddresslookupfromci':
 							$aResult[] = new SeparatorPopupMenuItem();
 							$sMenu = 'UI:MACLookup:Action:CI:Details';
 							$aResult[] = new URLPopupMenuItem($sMenu, Dict::S($sMenu), utils::GetAbsoluteUrlAppRoot()."pages/UI.php?operation=details&class=$sClass&id=$id&$sContext");
-							break;
+    						break;
 
 						default:
 							break;

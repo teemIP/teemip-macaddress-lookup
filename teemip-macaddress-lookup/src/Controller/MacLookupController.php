@@ -21,7 +21,7 @@ class MacLookupController extends Controller
 
     public function __construct($sViewPath = '', $sModuleName = 'core', $aAdditionalPaths = [])
     {
-        //$sModuleName = 'teemip-macaddress-lookup'; Fails if set
+        $sModuleName = 'teemip-macaddress-lookup';
         $sViewPath = MODULESROOT.'teemip-macaddress-lookup/templates';
         parent::__construct($sViewPath, $sModuleName, $aAdditionalPaths);
     }
