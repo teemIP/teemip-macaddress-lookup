@@ -1,5 +1,5 @@
-# <img src="https://wiki.teemip.net/lib/exe/fetch.php?media=extensions:picto_macaddresslookup.png"> TeemIp MAC Address Lookup
-TeemIp extension that provides information on MAC address vendors
+# <img src="https://wiki.teemip.com/lib/exe/fetch.php?media=extensions:picto_macaddresslookup.png"> teemIP MAC Address Lookup
+teemIP extension that provides information on MAC address vendors
 
 
 ## Description
@@ -8,9 +8,9 @@ This extension allows CMDB managers to get live MAC address information either f
 
 ## Documentation
 
-Comprehensive documentation can be found on TeemIp’s [wiki][1], namely in the chapter dedicated to the extension:
+Comprehensive documentation can be found on teemIP’s [wiki][1], namely in the chapter dedicated to the extension:
 
 [MAC Address Lookup][2]
 
-[1]: https://wiki.teemip.net
-[2]: https://wiki.teemip.net/doku.php?id=extensions:teemip-macaddress-lookup
+[1]: https://wiki.teemip.com
+[2]: https://wiki.teemip.com/doku.php?id=extensions:teemip-macaddress-lookup
